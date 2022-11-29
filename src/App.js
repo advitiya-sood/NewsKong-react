@@ -19,7 +19,7 @@ export default class App extends Component {
     }
 
 
-  pageSize=12 
+  pageSize=10
   render() {
     return (
       <div>
