@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-export default class NewsItem extends Component {
-  render() {
-    let { title, description, imageUrl, url, date, author,source } = this.props;
+const NewsItem=(props)=> {
+
+    let { title, description, imageUrl, url, date, author,source } = props;
     return (
       <div>
         <div className="card my-2">
@@ -14,7 +14,7 @@ export default class NewsItem extends Component {
             <h5 className="card-title">{title}...</h5>
             <p className="card-text">{description}</p>
             <p className="card-text">
-              <small className="text-muted">
+              <small className="text-muted">k
                 {" "}
                 Published By: {!author ? "Unknown" : author} on{" "}
                 {new Date(date).toGMTString()}
@@ -28,4 +28,4 @@ export default class NewsItem extends Component {
       </div>
     );
   }
-}
+ export default NewsItem
